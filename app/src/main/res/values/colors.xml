@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <color name="homeColor1">#AD277E</color>
+    <color name="homeColor2">#06139C</color>
+    <color name="homeColor3">#000000</color>
+
+    <color name="buttonColor">#000000</color>
+    <color name="textColor">#FFFFFF</color>
+
+
+    <color name="specialButtonColor1">#A72780</color>
+    <color name="specialButtonColor2">#061291</color>
+
+
+</resources>

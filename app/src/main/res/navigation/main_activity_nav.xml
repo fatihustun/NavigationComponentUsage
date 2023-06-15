@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity_nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.navigationcomponentusage.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/passingtoProfileScreen"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/passingtoContactScreen"
+            app:destination="@id/contactFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.navigationcomponentusage.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/passingtoProfileDetailScreen"
+            app:destination="@id/profileDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileDetailFragment"
+        android:name="com.example.navigationcomponentusage.ProfileDetailFragment"
+        android:label="fragment_profile_detail"
+        tools:layout="@layout/fragment_profile_detail" >
+        <action
+            android:id="@+id/passingFromProfileDetailScreenTofromScreen"
+            app:destination="@id/formFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/contactFragment"
+        android:name="com.example.navigationcomponentusage.ContactFragment"
+        android:label="fragment_contact"
+        tools:layout="@layout/fragment_contact" >
+        <action
+            android:id="@+id/passingtoFormScreen"
+            app:destination="@id/formFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/formFragment"
+        android:name="com.example.navigationcomponentusage.FormFragment"
+        android:label="fragment_form"
+        tools:layout="@layout/fragment_form" />
+</navigation>
